@@ -1,0 +1,102 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+:root {
+    --color_1: #E6EBE0;
+    --color_2: #F4F1BB;
+    --color_3: #ED6A5A;
+    --color_4: #588B8B;
+    --color_5: #2E3532;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    color: var(--color_5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color_1);
+    background: url(images/bangkok.jpg);
+    background-size: cover;
+    height: clamp(185px, 40vh, 500px);
+}
+
+#header {
+    background: var(--color_4);
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+#subheader {
+    background: var(--color_5);
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 0 25px;
+}
+
+#main {
+    background-color: var(--color_1);
+}
+
+#header-activities {
+    padding: 20px 0;
+}
+
+.gallery {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.places {
+    margin: 10px 40px;
+    width: 400px;
+}
+
+.places img{
+    border-radius: 50%;
+}
+
+#card {
+    background-color: var(--color_4);
+    color: var(--color_1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: min(600px, 80vw);
+    padding: min(2vw, 20px);
+    border-bottom: 10px solid var(--color_5);
+    margin: 20px auto;
+}
+
+#guide {
+    margin: 0 15px;
+}
+
+#guide-info {
+    margin-right: 15px;
+    width: 400px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+img {
+    width: 150px;
+}
